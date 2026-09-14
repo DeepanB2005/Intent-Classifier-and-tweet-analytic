@@ -171,10 +171,11 @@ if not os.environ.get("GEMINI_API_KEY"):
 After setting the project path:
 ```python
 from support_agent.main import support_agent
+```
 
 Then inference remains simple:
 #single text input
-
+```python
 message = "I cannot log into my Apple account"
 
 result = support_agent(message)
@@ -182,8 +183,8 @@ result = support_agent(message)
 print(result)
 ```
 ## 5. Environment-independent test section
-   ```python
 #multi text input
+   ```python
        test_messages = [
     "I cannot log into my Apple account",
     "I was charged twice for the same purchase",
