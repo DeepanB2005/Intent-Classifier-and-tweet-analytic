@@ -1,0 +1,199 @@
+tweet_id,text,gold_intent,gold_action,annotation_notes
+2009134,"@AppleSupport Thanks, I've DMd",other,auto_handle,Customer acknowledges that they sent a DM; no new request
+2136609,"@AppleSupport No DM is required , the problem has simply been mentioned , what do u want in DM , ,",complaint,escalate,Customer is dissatisfied with the request to move the issue to DM
+2863525,@AppleSupport hello! Where do I go to remove a device from my account so I don’t get recommmebdations for it?! https://t.co/0gFvWCzW1U,account_access,auto_handle,Asking how to remove a device associated with their account
+2774454,@AppleSupport why does my iPhone keep asking me to sign into an iTunes account that’s not mine?,account_access,auto_handle,Unknown iTunes account is repeatedly requesting sign-in
+159587,@AppleSupport another question if i️ have t-mobile can i️ use the iphone 8 ?,information_request,auto_handle,Asking whether iPhone 8 works with T-Mobile
+2915961,@119459 @AppleSupport #apple #iphone8 Hii in the iphone 8whether Portrait Mode is available on iPhone 8,information_request,auto_handle,Asking whether Portrait Mode is available on iPhone 8
+1342967,@AppleSupport aidez moi :),other,auto_handle,"""Help me"" is too vague to determine the actual issue"
+121524,@AppleSupport Yup!,other,auto_handle,Simple acknowledgement with no support request
+1450150,@AppleSupport iOS 11.1 drains my ipad battery.  I went from 100% to 7% in 2 hours while streaming radio.  Has never happened before. FIX!,technical_issue,auto_handle,Severe battery drain occurring after iOS update
+1929203,@AppleSupport battery is awful since updating to ios11 on my 7. General performance is poor also. How long until the new update?,technical_issue,auto_handle,Battery drain and poor performance after iOS update
+1821471,"@AppleSupport My MacBook Pro w/TB is a month old. Sticky key today. I'm aware of the compressed air thing, but it is *a month old*! Come on!",product_issue,auto_handle,Sticky key on a recently purchased MacBook Pro
+2212981,@AppleSupport my macbook pro needs a new hard drive but staff say you don't make them anymore😒,product_issue,escalate,MacBook Pro needs a hard drive replacement and support says it is no longer made
+332829,@AppleSupport Step 4 helped. Thanks a lot. https://t.co/gDjcrdKAtb,other,auto_handle,Confirms that a troubleshooting step solved the issue and thanks support
+1332257,"@AppleSupport I thought you might say that.  Lets, but we’re two updates in on your latest offering. Caused more problems than it fixed.",technical_issue,escalate,Reports that recent updates caused more problems than they fixed
+876338,@AppleSupport iPhone 7 and iOS 11.0.3. Please give me a way to downgrade my shit back to iOS 10.,technical_issue,auto_handle,Requests ability to downgrade from iOS 11 to iOS 10
+922112,@AppleSupport iPhone 6S just sign 10.3.3 again so I can downgrade :-),technical_issue,auto_handle,Requests ability to downgrade iPhone software
+739142,@AppleSupport no actually I'm looking for change my ringtone on my apple watch,information_request,auto_handle,Asks how to change the ringtone on Apple Watch
+2575319,"@AppleSupport Went to the Apple store and got nowhere. Created most of the tones through iTunes. None work, default ring persists, regardless of which tone set",technical_issue,auto_handle,Custom ringtones do not work and default ringtone persists
+878886,"@AppleSupport Upgraded iphone7 to ios11.0.3, phone completely frozen, cannot open any app, cannot restart (even pressing the button on the right of the phone), cannot restore through iTunes because Find My iPhone is activated (cannot access my settings to deactivate it)!Any Help?",technical_issue,escalate,"iPhone is frozen, cannot open apps, restart, or restore because Find My iPhone cannot be disabled"
+1552563,@AppleSupport i have iphon7 with ios11.1 i can’t make phone calls or use the camera and its restart by itself and stuck on apple logo,technical_issue,escalate,"Phone cannot make calls or use camera, restarts itself, and is stuck on Apple logo"
+207990,".@hulu_support @AppleSupport When will glitch be fixed? Since last update I can no longer mirror Hulu on Apple TV! Ads are fine, program not",technical_issue,auto_handle,Hulu mirroring to Apple TV stopped working after an update
+602378,@AppleSupport my iPad mini charges to 100% then I unplug it and use it for 30 seconds and it shuts down and says it has no battery,technical_issue,escalate,iPad shuts down shortly after reaching full charge
+1272418,"@AppleSupport Not quite sure what you need. Standard iPad plug, standard Apple cable, plugged into an iPad Air 2. It's melted &amp; set carpet on fire",product_issue,escalate,iPad charger/cable setup melted and caused a carpet fire
+2062018,Ohhh since i update my Iphone 7 #ios1102... iphone became freezing and hang every hours &amp; battery drain issue @AppleSupport,technical_issue,escalate,iPhone freezes/hangs repeatedly and has battery drain after iOS update
+1363267,@AppleSupport why does my brand new iPhone8 keep freezing??,technical_issue,auto_handle,Brand-new iPhone 8 repeatedly freezes
+1931176,@115858 @AppleSupport What have you done to our phones. Battery life plummets (I’ve been on a flight on airplane mode!) contact list’s a mess,technical_issue,escalate,Severe battery-life and contact-list problems after iOS update
+2419774,@AppleSupport Competency of Apple Support. They best they could provide is advice to switch off/on the phone. @126033 @120319 @115858 https://t.co/ChWyb9FQAs,complaint,escalate,Customer is dissatisfied with Apple Support's troubleshooting response
+2422625,"Hey @AppleSupport , my iPhone 7 plus screen tilts even when the tilt option is locked. The screen is displayed horizontally, even though I've held it vertically. This has been happening since iOS 11 update... Can you help? Its hard to operate the phone now",technical_issue,escalate,Screen orientation is incorrect despite rotation lock after iOS update
+565943,Why isn’t my phone turning videos sideways when I tilt my phone @AppleSupport,technical_issue,auto_handle,Videos do not rotate when the phone is tilted
+823181,@316093 @AppleSupport help me!!!! 😩😩😩 lol thanks Matt!,other,escalate,Vague request for help without an identifiable issue
+211288,@AppleSupport could you please make it simple like what is the first important two steps i have to do first and thank you so much,information_request,auto_handle,Asks for the first two important troubleshooting steps
+2068556,"Really hate @115858 today 😒 so useless @AppleSupport &amp; your new update is crap by the way and has frazzled my phone, so thanks 👍🏼",complaint,escalate,Strong dissatisfaction with Apple Support and an update that caused phone problems
+1621157,@496782 Yes!!! It's annoying! This why ppl don't never update their phone @AppleSupport,complaint,escalate,Expresses dissatisfaction with updating phones because of issues
+1978028,@AppleSupport Yeah that didn’t work for me either.,other,escalate,Says the suggested solution did not work but provides no problem context
+550810,"@AppleSupport Worked like a charm, thank you.",other,auto_handle,Confirms a solution worked and thanks support
+560416,@AppleSupport yesterday and I’m on 11.1.2,other,auto_handle,Only provides a date/version fragment with no identifiable support request
+1001138,@AppleSupport 6.5 and yes v11.0.3,other,auto_handle,Only provides device/version information with no identifiable request
+2434657,"@AppleSupport There’s no iTunes showing and I know I got an album last week, and I’m guessing my family member got another yesterday.",technical_issue,auto_handle,iTunes content/album information appears to be missing or incorrect
+1635764,@AppleSupport The categories just got all switched like moved the albums arounds like had all in one place two different categories instead of just one,technical_issue,auto_handle,Album categories were unexpectedly rearranged
+427857,Can't believe @115858 delivery can be so crap!!! @AppleSupport I am just so disappointed I think I should take my hard earned money elsewhere,complaint,escalate,Strong complaint about poor delivery/service
+2476233,"@475059 @AppleSupport If You end up not keeping a phone that You bought Apple Care + for after the 14 days, do You get refunded the Apple Care money as well?",refund,auto_handle,Asks whether AppleCare+ payment is refunded after returning a phone
+2806698,"@AppleSupport before i go buy the iphone x, are there any other colors releasing",information_request,auto_handle,Asks whether additional iPhone X colors will be released
+2311617,"@AppleSupport I was on Public beta, done a fresh install on iPhone in DFU-Mode. now i am on stock firmware...",technical_issue,auto_handle,Reports a firmware/installation state after a DFU-mode fresh install
+2207414,"@AppleSupport please fix this glitch where every time I type the letter after the letter H, my phone shows a symbol instead.",technical_issue,auto_handle,Typing a specific letter produces the wrong symbol
+2014006,Eye just want to be able to text the letter after ‘h’ and before ‘j’. @115858 @AppleSupport please fix this already.,technical_issue,auto_handle,Typing a specific letter produces an incorrect character
+938217,@applesupport since forced upgrade to 11.0.3 can no longer access company exchange mail. Phone freezes. Screen clouds. Lose functions #fail,technical_issue,escalate,"iOS update caused Exchange Mail access problems, freezing, and screen issues"
+1565166,"@AppleSupport 11.1 is terrible, please fix. Apps close, photos dont delete, crap.",technical_issue,escalate,iOS update causes apps to close and other functions to fail
+1768840,@AppleSupport I’m going to yes this my replying. I️ still think you should probably get the patch out because it’s annoying,technical_issue,auto_handle,Reports an annoying software issue and requests a patch
+445966,@AppleSupport So what does #apple advise when it really becomes winter🌨❄️☃️?!?! Use a @125607 or @1107 🤔 and this morning it just was around 5/6 degrees.... https://t.co/gTSsHxPLaY,information_request,auto_handle,Asks what Apple recommends for using a device in cold winter conditions
+1807508,"@AppleSupport Is there a way to de-pair the remote from my ATV4K? I can’t find it, but wherever it is, the Siri button keeps getting pushed.",information_request,auto_handle,Asks how to unpair an Apple TV remote
+854529,@AppleSupport how do I stop Siri and search from turning back on inside my apps? I turned it off in nearly every app and went back in to find it turned back on. Even with Siri and search turned off I have to go through every app.,technical_issue,auto_handle,Siri and Search settings keep turning back on
+2263484,So is there a reason why all my photos are fuzzy and Live photos are not working. I get i'm still on the 6s but come on @AppleSupport #ios1112,technical_issue,auto_handle,Photos are fuzzy and Live Photos do not work
+2005569,@AppleSupport how did I go from over 8000 pictures to 900 without deleting anything and with the same amount of memory being used?,technical_issue,escalate,Large number of photos disappeared without being deleted
+2657439,@AppleSupport @749156 iOS 11 sucks,complaint,escalate,General negative complaint about iOS 11
+610313,@AppleSupport ios 11 fucking sucks it broke my phone,technical_issue,escalate,iOS 11 reportedly broke the phone
+2376079,"still not getting 95% of notifications from text, twitter and snap 💞 tysm @AppleSupport https://t.co/hyGebsuD0C",technical_issue,escalate,Most notifications are not being received
+1573727,"@AppleSupport hi, since updating to IOS 11.1, I can’t send gifs in i-message.Keep getting directed to Apple store to purchase gifs/stickers",technical_issue,auto_handle,Cannot send GIFs in iMessage after iOS update
+1786313,@115858 @AppleSupport my iphone 6s crashed after ios update.i think this is a planned strategy from apple side.,technical_issue,escalate,iPhone crashed after iOS update
+145251,@AppleSupport Apple iPhone 5s https://t.co/mr3GI2qUHa,other,auto_handle,Only identifies an Apple iPhone model/link with no support request
+243241,"@173757 @AppleSupport Marico mi tlf va de mal en peor, con iOS 11.0.2 esta mas loco aun 😑 ahora tambien se queda blanca la pantalla, ya no es solamente negra",technical_issue,escalate,iOS update causes worsening problems and screen display failures
+1211784,@115858 @AppleSupport como funciona la política de garantía enColombia?,information_request,auto_handle,Asks about the warranty policy in Colombia
+882596,@AppleSupport how do you fix the battery draining problem after the 11.0.3 upgrade???  Draining as I type :(,technical_issue,auto_handle,Battery drains rapidly after iOS update
+1808608,@AppleSupport updated to iOS 11 and now my iPhone 6S battery is draining rapidly all the time. Thanks Apple! 👍🏼 @115858,technical_issue,auto_handle,iPhone battery drains rapidly after iOS 11 update
+1123814,@AppleSupport Now the FaceTime is available but you need to send for us updates,information_request,auto_handle,Asks about FaceTime availability and updates
+1331923,@AppleSupport why my FaceTime Live Photo’s not saving?🤔,technical_issue,auto_handle,FaceTime Live Photos are not saving
+239633,@AppleSupport On the home screen I can. But it becomes blurred in some apps...like this https://t.co/1Pr0oyU0fQ,technical_issue,auto_handle,Screen becomes blurred inside some apps
+206685,@164952 @AppleSupport get me in on this convo! myself &amp; many others are struggling with this as well. why’d you get rid of the option to disable auto-brightness?,information_request,auto_handle,Asks why the option to disable auto-brightness was removed
+390061,@AppleSupport What’s up with the iPhone 6S battery these past few days? Mine is draining like crazy all of a sudden.,technical_issue,auto_handle,iPhone 6S battery suddenly drains rapidly
+2476269,@AppleSupport Also the phone begins to get hot will using it on to watch YouTube videos and while texting the phone will loose charger at a rate of 10 percent every 5 to 10 minutes which shouldn’t happen,technical_issue,escalate,Phone overheats and battery/charging drops rapidly during use
+92767,@AppleSupport Yes. It’s happening to other apps too like Apple Music. So not app specific but. iOS 11 😘,technical_issue,auto_handle,Multiple apps have problems after iOS 11; not app-specific
+1147907,"@AppleSupport When I have a song playing on Pandora or Apple Music &amp; I start any video (insta, fb, cam app) The video and app closes and music app ends",technical_issue,auto_handle,Starting video causes the current app and music playback to close
+1339816,"@115858 @AppleSupport ever since iOS 11 my GPS stops working within a few seconds of opening apps like maps, google maps, pokemon go, etc.",technical_issue,auto_handle,GPS stops working shortly after opening apps
+1420119,"@AppleSupport A road was added in #Corona, CA almost 1 yr ago, no update on #applemaps yet. Busy road. #Google already up. Going to update? https://t.co/skY1O5e5jl",information_request,auto_handle,Reports a missing road update in Apple Maps and asks when it will be updated
+2220386,@AppleSupport Autre chose que « réinitialiser » le dictionnaire ... quelque chose de durable et efficace !!!,technical_issue,auto_handle,Requests a durable fix for a dictionary-related problem
+2478990,"Buongiorno @AppleSupport.
+Calendario in iCloud funziona male da almeno 3 settimane. L’ultimo problema é la non sincronizzazione.",technical_issue,auto_handle,iCloud Calendar is not synchronizing
+2969012,"@AppleSupport Maps is in error on I375 heading into St Petersburg, Fl. Maps says head for 4th Avenue North but the highway signs say head for 4th Street North. Thanks, Brian https://t.co/bwMaXGmVxW",technical_issue,auto_handle,Apple Maps gives incorrect directions
+873893,"@AppleSupport This is the first time I used the @115858  Maps , since @200998 was there so never had the scarcity , but Now when I wanted it won’t show",technical_issue,auto_handle,Apple Maps fails to show the expected information
+2926425,@AppleSupport You have mail!,other,auto_handle,Brief message with no identifiable support request
+1679206,@AppleSupport Yeah so I did that &amp; I️t worked for less than a few hours now it’s back 🙄,technical_issue,auto_handle,Previous fix worked temporarily but the issue returned
+1684474,"@AppleSupport Hi, I'm having issues w iCloud syncing. First Notes, now Ulysses. I've spent 30+ hrs on phone w Apple support. What can I do?",technical_issue,escalate,Persistent iCloud syncing problems despite extensive Apple Support contact
+594668,@AppleSupport I updated the fix for High Sierra and I was able to access iCloud and manage settings. Thanks for getting back to me.,other,auto_handle,Confirms an update fixed the iCloud issue and thanks support
+1483628,@AppleSupport the capital “i” situation needs to be fixed. Always something whenever y’all drop a new phone. 🙄,technical_issue,auto_handle,Capital I character issue after a new phone/update
+2014178,Thanks @115858 I️ like to keep my options open when it comes to the letter ‘I’ #iPhoneProblems #iOSProblems @AppleSupport https://t.co/YS9WlPOgNY,technical_issue,auto_handle,Reports the letter I issue and comments on iPhone/iOS problems
+593573,"@AppleSupport hello! Hey, i have some problems with my iCloud Library, i cant’t upload my photos to iCloud. Yestarday my icloud library said that the photos upload complete, then i took some photos only 20 photos, and now my iCloud library said that si charging 700 photos 😨 why?",technical_issue,auto_handle,iCloud Photos upload/sync is behaving incorrectly
+851943,"How do i delete ""ghost"" albums on my iCloud?albums are empty and deleted on my device but still appearing on my iCloud @AppleSupport",technical_issue,auto_handle,Empty deleted albums continue appearing in iCloud
+2013081,@AppleSupport why does autocorrect on my phone keep changing “i” to I️ ??,technical_issue,auto_handle,Autocorrect changes lowercase i to a different character
+2385196,@AppleSupport I have had a problem typing it which autocorrects to I.T EVERY TIME I type! This is going on since the A? Glitch! Please fix this!!!!!,technical_issue,auto_handle,Typing i is repeatedly autocorrected incorrectly
+1697459,@AppleSupport That worked! Thank you😱😇,other,auto_handle,Confirms the solution worked and thanks support
+2019843,@AppleSupport can y’all fix this please,other,escalate,Generic request to fix an unspecified issue
+2876530,"Hey @AppleSupport, should this macOS update be taking hours to complete? Sat on 43 min remaining and now won't give a time. https://t.co/O5VtTP8Ydw",technical_issue,auto_handle,macOS update appears stuck during installation
+1821853,@AppleSupport Why can search engine default not be changed from Safari preferences in High Sierra? Always bounces back to Google for me…,information_request,auto_handle,Asks how to change the default search engine in Safari
+1239029,@AppleSupport People who are blind or vision impaired are your main customers. Fix the issues ASAP,complaint,escalate,Broad complaint demanding accessibility-related issues be fixed
+1357284,@AppleSupport @436443 we know the games. the only way to assist is to give us the new X’s,complaint,escalate,Customer expresses dissatisfaction and asks for new iPhones as the only assistance
+2151166,@AppleSupport New X and most recent iOS,other,auto_handle,Only provides product/update information without an identifiable request
+1376100,"@AppleSupport IPhone 7, 11.1 with recent updates.",other,auto_handle,Only provides device and iOS version information
+1474719,@459904 @AppleSupport She got me fucked up lol I’m getting the X they don’t have to mess up my phone,complaint,escalate,Expresses frustration about phone problems and concern about getting an iPhone X
+2713218,"@761696 @AppleSupport Oh no, I’ll be leaving feedback- persistently until I get a sufficient response at that.",complaint,escalate,Says they will continue providing negative feedback until receiving a sufficient response
+1391241,@AppleSupport I don't think you understand. When I am trying to update an app is asking me for verification for billing when it's a free app. Also when I follow the steps it's says cc invalid. Even though I shouldn't since app is free. https://t.co/hHEa6UyPyj,billing_payment,escalate,Free app update requests billing verification and reports an invalid credit card
+548175,@115858 @AppleSupport Just clearly says Apple Pay cash right I’m not crazy right because it is nowhere in this update https://t.co/kFXUojLAJM,information_request,auto_handle,Asking whether Apple Pay Cash is included in the update
+15467,@AppleSupport hi all. @115948 and settings apps keep crashing on iOS 11.1.2. See attached video. Is this a known issue? https://t.co/bjiEsXG7uG,technical_issue,auto_handle,Settings and apps keep crashing after iOS update
+1557160,"@AppleSupport Hello, I have the latest update iOS 11.1.1. But this happens to both my iPhones. I’m pretty sure @126 is the problem as it doesn’t happen with any other app I have.",technical_issue,auto_handle,Reports an app problem after the iOS update
+2686729,@AppleSupport Im running iOS 11.1.2 I have an iPhone 6s Plus and this has been happening for about 7 months and the same thing happened to my moms as well and it happens in all modes even slow motion.,technical_issue,auto_handle,Long-standing camera/video problem occurring in all modes
+697996,"@AppleSupport Yes, thank you.",other,auto_handle,Simple acknowledgement/thanks with no support request
+1187743,@AppleSupport Solved. Thank you so much! 💪🏻,other,auto_handle,Confirms the issue was solved and thanks support
+1883072,"@AppleSupport updated to iOS 11.0.3 and my iPad Air2 is now sluggish and unresponsive, touch screen can’t even keep up. Worked ok with iOS10",technical_issue,auto_handle,iPad became sluggish and unresponsive after iOS update
+841945,@AppleSupport Everything I do with my phone is slower or barely works. I’m not exaggerating. The experience was fine before IOS11.,technical_issue,escalate,Severe overall performance problems after iOS 11
+1852839,@AppleSupport The update 11.0.3 has completely turned my phone obsolete,technical_issue,escalate,iOS update severely affected the phone
+215387,My phone just gonna keep going black and white till I update ?!?! @AppleSupport,information_request,auto_handle,Asks about the phone behavior before updating
+2077344,@AppleSupport Nah that's okay. I'm just gonna buy @4770 headphones,other,auto_handle,Statement about buying headphones; no support request
+174975,Hey @AppleSupport what’s with this volume thing and the @115888 app when I switch apps on iPhone X? https://t.co/oXvO3qqNcs,technical_issue,auto_handle,Reports volume/app switching behavior on iPhone X
+2626673,@AppleSupport Is this real? https://t.co/kaMTBccRoo,information_request,auto_handle,Asks whether a linked item or claim is genuine
+1685198,@AppleSupport - I’ve had an email from Apple Support but I don’t think it’s a genuine email?,account_access,auto_handle,Concern that an Apple Support email may be fraudulent
+1789288,@AppleSupport Doing so now. It's up to date to iOS 11.3 or whichever the newest version is. I can't check as it's going off and on,technical_issue,escalate,"Phone repeatedly goes on and off, preventing normal use"
+549602,@AppleSupport Was that a change in ios11.2 because the text was white with the same background prior to installing that.,technical_issue,auto_handle,Reports a text display change after iOS update
+1391870,"Hey @AppleSupport, feature request: long press to actually turn off Wi-Fi and BlueTooth. Thanks!",information_request,auto_handle,Feature request to fully turn off Wi-Fi and Bluetooth
+1593893,@115858 @AppleSupport idk what’s going on but ever since I️ updated the new #emojis I’ve had issues texting on @917 shows “?” “!” HELP,technical_issue,auto_handle,Emoji update causes a texting character problem
+2013893,My phone clearly some shitttt why don’t I have the new emojis yo @AppleSupport,information_request,auto_handle,Asks why new emojis are unavailable
+1010564,"Dear @AppleSupport 
+In iOS 11 Sindhi is not fully supported. See the picture below iOS 11 fonts not supporting some character properly. https://t.co/0xsEKE9Vb5",technical_issue,auto_handle,iOS font does not properly support some Sindhi characters
+1615406,I️ have such an annoying glitch on my phone after getting ios11 😭😭😭 @AppleSupport please help,technical_issue,auto_handle,Reports an unspecified phone glitch after iOS 11
+1053446,"@AppleSupport when are you going to fix the power problem, touch delay, Bluetooth coming on when wifi turned on 11.3-Android is calling me",technical_issue,escalate,"Multiple serious issues including power, touch delay, and Bluetooth behavior"
+2241251,Hey @115858 @AppleSupport can you fix the  Bluetooth Disconnect issue?,technical_issue,auto_handle,Bluetooth disconnect problem
+1957416,@AppleSupport I just hope that backing my stuff up on iCloud  or using my own SIM card will restore my content,information_request,auto_handle,Asks whether iCloud backup or SIM will restore content
+1027011,@AppleSupport I do. How can I restore them onto my phone?,information_request,auto_handle,Asks how to restore previously backed-up items to the phone
+1698628,@AppleSupport But it's the same. I never used to have a problem updating over wifi.,technical_issue,auto_handle,Updating over Wi-Fi is now failing
+2255460,"@AppleSupport Yes, it keeps dropping connection then reconnecting only been happening last 2 days.",technical_issue,auto_handle,Connection repeatedly drops and reconnects
+709067,@AppleSupport why can’t I just delete all notifications in one go any more? https://t.co/tZKfXY4utW,information_request,auto_handle,Asks how to delete all notifications at once
+671333,@AppleSupport no audible notifications when iPhone X is locked.  Wife ready to return phone,technical_issue,escalate,No audible notifications when iPhone X is locked; considering returning phone
+2266745,@AppleSupport I believe so,other,auto_handle,Simple confirmation with no identifiable support issue
+1149989,@AppleSupport Have them transfer all my data for me.,information_request,auto_handle,Requests help transferring all data
+1693476,Nfs @AppleSupport FIX THIS QUESTION MARK ISSUE,technical_issue,auto_handle,Question-mark issue in text input
+1703974,Yo @115858 @AppleSupport you wanna fix that issue that replaces the later I️ with an And a box with a question mark in it?,technical_issue,auto_handle,Text characters replaced by a box/question mark
+1335457,@AppleSupport https://t.co/FCPjIDaVoH,other,escalate,"Only contains a link, with no identifiable support request"
+2915987,@AppleSupport https://t.co/etXZT0gTJE,other,escalate,"Only contains a link, with no identifiable support request"
+718112,My watch face just popped off my watch!? That’s NOT supposed to happen!!!?!?! @115858 @AppleSupport https://t.co/AMA59yjVwR,product_issue,escalate,Apple Watch hardware appears physically damaged
+2002181,@AppleSupport Tha activity app is loosing the data as soon that the phone syncs with the watch! https://t.co/OEtnW8KSVT,technical_issue,auto_handle,Activity app loses data when syncing with Apple Watch
+1714673,"Dear @AppleSupport, how can I put my plethora of podcast in a play-order?  Some are not child friendly &amp; I need list safe for carpool/trips.",information_request,auto_handle,Asks how to organize podcasts into a play order
+1141031,"@AppleSupport IOS 11.0.3 Just did a restart, works now, yes. I've never actually tried that, generally resort to going to the podcast website",other,auto_handle,Confirms restart solved the issue; no new support request
+1981151,My phone decided to delete all but 35 of my photos?? What the fuck @AppleSupport?? 😤,technical_issue,escalate,Photos were unexpectedly deleted and cannot be recovered
+1019392,Hey @AppleSupport I restarted my phone and it deleted over 200 pictures and videos that I can’t seem to get back. HELP 😭,technical_issue,escalate,Restart deleted many photos and videos that cannot be recovered
+450371,this “I” turning into a question mark and an A has been going on for too long. kinda don’t even want to tweet/text anymore @AppleSupport @115858,technical_issue,auto_handle,Text character is repeatedly converted into a question mark/A
+1774430,Hey @AppleSupport can you get your shit together with this lovely new big that deletes your text in the middle of typing and the I️ thing,technical_issue,auto_handle,Text is deleted while typing along with character-rendering issue
+854566,@AppleSupport It’s happening on my iPad as well as my iPhone.,technical_issue,auto_handle,Confirms the same issue occurs on iPad and iPhone
+539924,@AppleSupport I had the spinning wheel loop issue this morning. I’m on GMT + 3 time zone. I reverted my date on my phone to Dec 1 and the issue stopped. Please fix the bug,technical_issue,auto_handle,Spinning-wheel loop caused by a software bug
+2347525,@AppleSupport @115858 why does the iPhone X Earpiece crackles when playing any sort of media 😑,product_issue,auto_handle,iPhone X earpiece speaker crackles during media playback
+451428,"Hey @AppleSupport received my iphone x today. But, what’s going on with the top speaker? It crackles very bad (not with all type of sounds).",product_issue,escalate,New iPhone X has severe top-speaker crackling
+1891221,"@AppleSupport I have had a couple of emails from you regarding security on my account but I’m not 100% convinced, can you help?",account_access,auto_handle,Concern about whether account-security emails are legitimate
+1297982,@AppleSupport hello my Mum has been hacked can someone message me please? Thanks,account_access,escalate,Reports that a family member's account/device was hacked
+928426,@AppleSupport Hi. How do I hide app purchases on my iphone? Swiping left no longer lets me hide them?,information_request,auto_handle,Asks how to hide app purchases on iPhone
+1911562,"@AppleSupport @116333 2X in recently, 2 websites accessed via Safari had pop-up saying my iPhone was corrupted-sent to APPStore [https://t.co/8fotWQjs8o]",technical_issue,auto_handle,Suspicious Safari pop-ups falsely claiming the iPhone is corrupted
+563102,@AppleSupport there’s a scratch on my belkin screen protector which I purchased just last week. Will I be able to have this replaced with a new one in any Apple store?,product_issue,auto_handle,Asking about replacement of a damaged Belkin screen protector
+1895770,@AppleSupport I had an iPhone 7. Someone stole it and unblocked from iCloud. What can I do?,account_access,escalate,Stolen iPhone and iCloud issue; account/device security concern
+2029089,@600046 @AppleSupport Ur welcome💞,other,auto_handle,Simple acknowledgement/thanks with no support request
+718510,@165259 @AppleSupport Huh?,other,escalate,Vague response with no identifiable support issue
+2484275,@115858 @AppleSupport fix this. I️ I️ I️ I️ I️ I️ I️ I️ I️ I️ I️ I️ I️ I️ I️ I️ I️ I️,technical_issue,auto_handle,Reporting/fixing an apparent text/input glitch
+152930,"@115858 @AppleSupport when in Steve Jobs’s name are you going to fix the damn “I”? Half my posts have it, half don’t. #whatwouldSteveJobsdo?",technical_issue,auto_handle,Keyboard/text rendering issue involving repeated I
+661689,@AppleSupport it drains battery pls fix it,technical_issue,auto_handle,Battery drains quickly
+1087767,"@AppleSupport Available for download, honestly that’s the best solution. Then at least my battery life would last a good 6hrs not 1hr and 40 minutes!-",technical_issue,auto_handle,Severe battery-life problem
+2780625,@AppleSupport I do not see “Home Videos” under Movies. Am I to assume they are no longer on my phone?,information_request,auto_handle,Asking where Home Videos went or whether they were removed
+1878110,Well this is aggravating. Now we can’t stream on #appleTV. Another iOS 11 bug? @AppleSupport #YesIhaveRebooted [https://t.co/ZUdbJZ3DZu],technical_issue,auto_handle,Apple TV streaming stopped working; suspected iOS bug
+563967,"@AppleSupport I updated it, and so far the restarting has stopped which is awesome. But the prompting for the password to an account that doesn’t exist is still happening. It asks me to enter the password to an Apple ID that does not exist. [https://t.co/J2mzgc1PhE]",account_access,auto_handle,Repeated password prompt for a nonexistent Apple ID
+846952,I got my new phone but to get all my old stuff on it I need an encryption password.. that I never set up.. Werk @AppleSupport,account_access,escalate,Cannot restore/access old data because of an unknown encryption password
+1702893,@AppleSupport please fix this update 😡 [https://t.co/2szrGByOyl],technical_issue,auto_handle,Reporting problems with an iOS update
+2286254,"Hey @AppleSupport this I glitch is getting worse and worse. I don’t want a shortcut, I want solutions. When can we expect that software update?",technical_issue,auto_handle,Software glitch requiring a future software fix
+1395057,@AppleSupport 11.0.3 :),other,auto_handle,Only provides an iOS version number; no identifiable request
+2834404,@AppleSupport . @AppleSupport how do I fix this?,other,escalate,Insufficient context to identify the problem
+541134,@AppleSupport 11.1.2 update means my phone is continually crashing. What do I do?,technical_issue,escalate,iOS update causes continual crashing
+336656,@AppleSupport Ever since ive updated my phone its been locking my phone randomly while im in the middle of using it and crashing my apps.,technical_issue,escalate,Update causes random locking and app crashes
+999929,@AppleSupport Fix activation servers please. [https://t.co/R6CVLqz3kL],technical_issue,escalate,Activation server problem prevents activation
+2864848,"@AppleSupport I have not been able to get to adding my cards In, right when I click plus that message comes up",technical_issue,auto_handle,Unable to add cards because of an error
+44559,@AppleSupport why music app is forcing me to subscribe Apple Music [https://t.co/QnxUNmWSon],subscription,auto_handle,Music app appears to force an Apple Music subscription
+2119461,@AppleSupport I've recently joined the apple music. However It reads this content is unauthorised whenever I try to play it offline.,subscription,auto_handle,Apple Music content is unauthorized for offline playback
+1607145,"@AppleSupport I’d actually like to be sent a new phone. I have tried multiple times to “solve” the issues, when the actual issues are poorly made phones.",product_issue,escalate,Requests replacement after repeated unsuccessful attempts to resolve issues
+1400688,@AppleSupport I am literally just trying to update my phone I don’t know what this means [https://t.co/jCA5MLqLBz],technical_issue,auto_handle,Encounters an error while trying to update the phone
+2665358,@AppleSupport so I got got a message saying that my time zone info got updated so I did but now what is this?? [https://t.co/N7X8v3tA1V],technical_issue,auto_handle,Unexpected problem after timezone information update
+2568149,@AppleSupport I am in Saudi Arabia,other,escalate,Only states location; no identifiable support request
+2585612,@AppleSupport Russia and full support by the bank,other,escalate,Fragmentary statement with insufficient context
+1120561,@AppleSupport iOS 11.2 sucks as well. Freezes all the time. Simple features in music app don’t work. Why is my battery life atrocious,technical_issue,escalate,"iOS causes freezes, broken Music features, and severe battery drain"
+2406593,@AppleSupport I would like to know why?<br>yesterday i upgraded my IOS to 11.1.1 and in the morning it crashed! doesn't work any more.<br>if you would like to help please :)<br>my device is iPhone 6 plus [https://t.co/LQUJ86fXpU],technical_issue,escalate,iOS update caused crash and device stopped working
+1075399,Can iPhones get viruses ?? @AppleSupport,information_request,auto_handle,Asking whether iPhones can get viruses
+9197,@AppleSupport But would it work with another phone brand?Like LG galaxy phones?,information_request,auto_handle,Compatibility question
+2146614,@AppleSupport please fix the iOS bugs thank you,technical_issue,auto_handle,Reports/request fixes for software bugs
+2410405,I thought this new iOS update was supposed to fix this A ? Problem. What’s gives @115858? @AppleSupport,technical_issue,auto_handle,Software/update problem
+1015697,"@AppleSupport that didn’t really help cuz whenever I turn off the WiFi in my COMMAND CENTER, it just turns back on whenever it wants",technical_issue,auto_handle,Wi-Fi/control-center malfunction
+1338028,@AppleSupport will there be an update for iOS 11 to properly turn off Bluetooth from control centre? The change is annoying and less secure.,technical_issue,auto_handle,iOS Bluetooth behavior/problem
+1142098,"@AppleSupport 
+Trying to install the update ... but getting an error https://t.co/ps74x8wKwX",technical_issue,auto_handle,iOS update installation error
+807404,@312397 @312398 I’m havin this problem too with the new update. Another update’s available that may rectify it but is stuck at update request @AppleSupport,technical_issue,auto_handle,Update installation/status problem
+981636,@AppleSupport @115858  My wonderful iPhone 6 Plus is now a useless piece of junk.  IOS 11.0.2 is a real disaster!,technical_issue,escalate,Severe device impact after update
+1748856,"@527135 @AppleSupport Yes. Click on an icon, type, opening an app, as well as the above. Horrible lag and unresponsiveness. iPhone 6s Plus 11.0.3",technical_issue,auto_handle,Performance/software issue
+1470689,"@AppleSupport I know you launched a new phone so all the others need to seem old and fuckedup, but my iphone 7plus 256gb is awesome. i dont want a new one",information_request,auto_handle,"Mainly a statement/opinion, no actual support problem; could also be"
+60296,@AppleSupport my phone screen doesn’t time out and auto lock how it’s supposed to. I’m pretty sure all my settings are right https://t.co/6g9jQOSoOi,technical_issue,auto_handle,Auto-lock malfunction
+1091330,@AppleSupport most recent update seems to have disabled my auto lock.,technical_issue,auto_handle,Software/update-related malfunction
+2013057,@AppleSupport Poor ram management,technical_issue,auto_handle,Performance/memory management complaint
+43336,"@AppleSupport No, this has not helped it is still randomly shutting down.",technical_issue,escalate,Persistent/repeated malfunction after attempted fix
+2710956,"I’m sitting here in Starbucks rebooting my iPad Pro like some Windows user, just to get my keyboard to work. It Just Works, @AppleSupport ?",technical_issue,auto_handle,Keyboard/device functionality problem
+789389,"Dear @AppleSupport, in occasion, mail locks up. Cursor will not move past a word. Can delete word, retype. Nothing else.",technical_issue,auto_handle,Mail application malfunction
