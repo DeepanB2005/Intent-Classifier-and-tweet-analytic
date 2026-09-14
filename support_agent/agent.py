@@ -25,6 +25,11 @@ class SupportAgent:
 
     def build_context(self, results):
 
+        # Retriever returns a dictionary.
+        # Extract the DataFrame containing the retrieved examples.
+        if isinstance(results, dict):
+            results = results["results"]
+
         context = []
 
         for i, (_, row) in enumerate(
@@ -53,7 +58,7 @@ Intent Match:
             context.append(example)
 
         return "\n".join(context)
-
+        
     def build_prompt(
         self,
         customer_message,
