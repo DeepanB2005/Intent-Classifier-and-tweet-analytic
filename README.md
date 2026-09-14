@@ -169,7 +169,7 @@ if not os.environ.get("GEMINI_API_KEY"):
 ## 4. Import the support agent
 
 After setting the project path:
-```
+```python
 from support_agent.main import support_agent
 
 Then inference remains simple:
@@ -181,26 +181,26 @@ result = support_agent(message)
 print(result)
 ```
 ## 5. Environment-independent test section
-   ```
+   ```python
        test_messages = [
-           "I cannot log into my Apple account",
-           "I was charged twice for the same purchase",
-           "I want a refund for my purchase",
-           "Where is my order?",
-           "My iPhone screen is not working"
-       ]
+    "I cannot log into my Apple account",
+    "I was charged twice for the same purchase",
+    "I want a refund for my purchase",
+    "Where is my order?",
+    "My iPhone screen is not working"
+]
 
-       for message in test_messages:
-           print("=" * 70)
-           print("CUSTOMER:", message)
-       
-           result = support_agent(message)
-       
-           print("INTENT:", result.get("intent"))
-           print("ACTION:", result.get("action"))
-           print("DECISION:", result.get("decision"))
-           print("REASON:", result.get("reason"))
-           print("RESPONSE:", result.get("response"))
+for message in test_messages:
+    print("=" * 70)
+    print("CUSTOMER:", message)
+
+    result = support_agent(message)
+
+    print("INTENT:", result.get("intent"))
+    print("ACTION:", result.get("action"))
+    print("DECISION:", result.get("decision"))
+    print("REASON:", result.get("reason"))
+    print("RESPONSE:", result.get("response"))
        ```
 The API key should **not be hard-coded or committed to the repository**.
 
