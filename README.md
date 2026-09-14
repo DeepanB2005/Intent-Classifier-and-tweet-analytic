@@ -1,59 +1,127 @@
 # Intent Classifier and Support Agent
 
-An NLP-based customer-support intent classification system that classifies customer messages into predefined support intents.
+# 🛠️ Support Agent Pipeline
 
-The project implements and compares two text feature extraction approaches:
+The trained intent classifier is integrated into a larger support-agent workflow.
 
-* **TF-IDF**
-* **Sentence Transformer (`all-MiniLM-L6-v2`)**
+After the customer's intent is identified, the system retrieves relevant support information and uses it to construct an appropriate response.
 
-Multiple classifiers were evaluated, including **Logistic Regression, SVC, and Linear SVM**. Linear SVM showed the most promising performance and is used as the primary classifier.
+```text
+Customer Message
+       │
+       ▼
+Intent Classification
+       │
+       ▼
+Predicted Intent
+       │
+       ▼
+Relevant Knowledge Retrieval
+       │
+       ▼
+Action Generation
+       │
+       ▼
+Response Generation
+       │
+       ▼
+Handling Decision
+       │
+       ▼
+Structured JSON Output
+```
 
-The trained intent classifier is integrated with a support-agent pipeline using **FAISS-based retrieval** and **Google Gemini** for generating support actions and responses.
+The support agent produces structured information such as:
 
----
-
-## Implementation
-
-The notebook implements the following stages:
-
-1. Load and preprocess the customer-support dataset.
-2. Convert text into numerical features using:
-
-   * TF-IDF
-   * Sentence Transformer embeddings
-3. Train and evaluate:
-
-   * Logistic Regression
-   * SVC
-   * Linear SVM
-4. Select the Linear SVM classifier for the final implementation.
-5. Save/load the trained model and required preprocessing components.
-6. Use the predicted intent for support-knowledge retrieval with FAISS.
-7. Generate the final support action and response using Google Gemini.
-8. Return the result in a structured format.
-
----
-
-## Requirements
-
-The notebook can be run in common Python notebook environments such as:
-
-* Jupyter Notebook
-* JupyterLab
-* Google Colab
-* VS Code Notebook
-* Kaggle Notebook
-
-Python 3.x is recommended.
+```json
+{
+    "intent": "account_access",
+    "action": "Ask for more details about the login issue",
+    "response": "We want to help you regain access to your account...",
+    "decision": "AUTO_HANDLE",
+    "reason": "The issue is a standard account-access problem."
+}
+```
 
 ---
 
-## Setup
+# 🔎 Knowledge Retrieval
 
-### 1. Clone the Repository
+The support-agent stage uses **retrieval-based support knowledge** to provide relevant information for the predicted customer intent.
 
-Run the following in a notebook cell:
+FAISS is used for efficient vector similarity search.
+
+```text
+Support Knowledge
+       │
+       ▼
+Vector Representation
+       │
+       ▼
+FAISS Index
+       │
+       ▼
+Similarity Search
+       │
+       ▼
+Relevant Support Information
+```
+
+This retrieved information is then provided to the response-generation component.
+
+---
+
+# ✨ Response Generation
+
+Google Gemini is used in the support-agent stage to generate the customer-facing response and structured support output.
+
+The LLM receives the relevant context and predicted intent and produces:
+
+* Recommended action
+* Customer-facing response
+* Handling decision
+* Reason for the decision
+
+The output is structured using a defined schema rather than relying only on free-form text.
+
+---
+
+
+### Inference
+
+The trained classifier can then be used to predict the intent of new customer messages.
+
+Example:
+
+```python
+message = "I was charged twice for the same order"
+
+prediction = classifier.predict(features)
+
+print(prediction)
+```
+
+---
+
+# 💻 Running the Notebook
+
+The notebook is designed to be **environment-independent**.
+
+## 1. Install Dependencies
+
+Run the following cell:
+
+```python
+%pip install -q pandas numpy scikit-learn sentence-transformers faiss-cpu joblib pydantic google-genai
+```
+
+Using `%pip` makes the installation suitable for notebook environments.
+
+---
+
+## 2. Clone the Repository
+
+If the repository is not already available:
 
 ```python
 import subprocess
@@ -68,31 +136,22 @@ if not REPO_DIR.exists():
         check=True
     )
 
-print(f"Repository: {REPO_DIR}")
+print("Repository:", REPO_DIR)
 ```
 
-Add the repository to the Python path:
+The notebook does not assume a fixed directory such as:
 
-```python
-import sys
-
-if str(REPO_DIR) not in sys.path:
-    sys.path.insert(0, str(REPO_DIR))
+```text
+/kaggle/working/
 ```
 
-### 2. Install Dependencies
+---
 
-```python
-%pip install -q pandas numpy scikit-learn sentence-transformers faiss-cpu joblib pydantic google-genai
-```
+## 3. Configure the Gemini API
 
-### 3. Configure Gemini API
+For the support-agent component, provide your Gemini API key through the `GEMINI_API_KEY` environment variable.
 
-The support-agent component requires a Gemini API key.
-
-Set the key using the `GEMINI_API_KEY` environment variable.
-
-For interactive notebook execution:
+For interactive notebook use:
 
 ```python
 import os
@@ -107,75 +166,11 @@ if not os.environ.get("GEMINI_API_KEY"):
     raise ValueError("GEMINI_API_KEY was not provided.")
 ```
 
-Do not hard-code or commit the API key to the repository.
+The API key should **not be hard-coded or committed to the repository**.
 
 ---
 
-## Running the Notebook
-
-After completing the setup, run the notebook cells sequentially.
-
-The notebook supports:
-
-### Training
-
-Train the intent classifier using the prepared dataset and compare the implemented feature-extraction and classification approaches.
-
-### Evaluation
-
-Evaluate the models using:
-
-* Accuracy
-* Precision
-* Recall
-* F1-score
-* Macro F1
-
-### Inference
-
-Use the trained classifier to predict the intent of new customer messages.
-
-Example:
-
-```python
-message = "I cannot log into my Apple account"
-
-prediction = classifier.predict(features)
-
-print(prediction)
-```
-
-### Support Agent
-
-The trained implementation can be loaded using:
-
-```python
-from support_agent.main import support_agent
-```
-
-Then:
-
-```python
-result = support_agent(
-    "I cannot log into my Apple account"
-)
-
-print(result)
-```
-
-The support agent returns structured information containing:
-
-```text
-intent
-action
-response
-decision
-reason
-```
-
----
-
-## Project Structure
+# 📁 Project Structure
 
 ```text
 Intent-Classifier-and-tweet-analytic/
@@ -196,56 +191,387 @@ Intent-Classifier-and-tweet-analytic/
 └── README.md
 ```
 
-The exact files and model artifacts may vary depending on the current project version.
+The exact files and directories may vary according to the current project implementation.
 
 ---
 
-## Main Technologies
+# 🧪 Example
 
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* Sentence Transformers
-* PyTorch
-* FAISS
-* Joblib
-* Pydantic
-* Google Gemini
+### Input
+
+```text
+"I cannot log into my Apple account"
+```
+
+### Intent Classification
+
+```text
+account_access
+```
+
+### Support Agent
+
+The predicted intent is used to retrieve relevant support information and generate a suitable action and response.
+
+### Final Output
+
+```text
+Intent: account_access
+
+Action:
+Ask for clarification about what happens when the customer
+attempts to log in.
+
+Decision:
+AUTO_HANDLE
+
+Response:
+Customer-facing response generated using the retrieved
+support context.
+```
 
 ---
 
-## Models
+# 🧰 Tech Stack
 
-### Feature Extraction
+* **Python**
+* **Pandas**
+* **NumPy**
+* **Scikit-learn**
+* **Sentence Transformers**
+* **PyTorch**
+* **FAISS**
+* **Joblib**
+* **Pydantic**
+* **Google Gemini**
+
+---
+
+# 🔄 Complete System
 
 ```text
-TF-IDF
+                 RAW CUSTOMER MESSAGE
+                         │
+                         ▼
+                 TEXT PREPROCESSING
+                         │
+             ┌───────────┴───────────┐
+             │                       │
+             ▼                       ▼
+          TF-IDF             Sentence Transformer
+             │                 all-MiniLM-L6-v2
+             │                       │
+             ▼                       ▼
+       Numerical Vector       Dense Embedding
+             │                       │
+             └───────────┬───────────┘
+                         ▼
+                   Linear SVM
+                         │
+                         ▼
+                  Predicted Intent
+                         │
+                         ▼
+                  FAISS Retrieval
+                         │
+                         ▼
+              Relevant Support Context
+                         │
+                         ▼
+                 Gemini Response
+                         │
+                         ▼
+                Structured JSON
+                         │
+             ┌───────────┴───────────┐
+             ▼                       ▼
+        AUTO_HANDLE              ESCALATE
 ```
 
-and
+---
+
+An NLP-based customer-support intent classification system that converts customer messages into numerical feature representations and classifies them into predefined support intents.
+
+The project explores two different approaches for text feature extraction:
+
+1. **TF-IDF (Term Frequency–Inverse Document Frequency)**
+2. **Sentence Transformer embeddings using `all-MiniLM-L6-v2`**
+
+The extracted numerical features are then provided to machine-learning classifiers. **Linear SVM** showed the most promising performance among the evaluated classifiers and is used as the primary classifier in the final implementation.
+
+The trained intent classifier is further integrated into a support-agent pipeline for retrieving relevant support knowledge and generating structured customer-support responses.
+
+---
+
+## 🚀 Project Overview
+
+The system follows the pipeline:
 
 ```text
-Sentence Transformer
-all-MiniLM-L6-v2
+                 CUSTOMER MESSAGE
+                        │
+                        ▼
+              Social Media Text
+                 Preprocessing
+                        │
+                        ▼
+             ┌──────────┴──────────┐
+             │                     │
+             ▼                     ▼
+          TF-IDF            Sentence Transformer
+       Feature Extraction       Embeddings
+             │                     │
+             │              all-MiniLM-L6-v2
+             │                     │
+             └──────────┬──────────┘
+                        │
+                        ▼
+                  Linear SVM
+                  Classifier
+                        │
+                        ▼
+                Predicted Intent
+                        │
+                        ▼
+             Relevant Support Knowledge
+                        │
+                        ▼
+                 Support Agent
+                        │
+              ┌─────────┴─────────┐
+              ▼                   ▼
+        Action Generation    Response Generation
+                                  │
+                                  ▼
+                           Structured JSON
 ```
 
-### Classifiers
+---
+
+# 🧠 Feature Extraction
+
+Machine-learning models cannot directly process raw text. Therefore, the input text is first converted into **numerical vectors**.
+
+These numerical representations allow the classifier to process textual information mathematically.
+
+Two feature-extraction techniques were implemented and compared.
+
+---
+
+## 1. TF-IDF
+
+**Term Frequency–Inverse Document Frequency (TF-IDF)** represents text using a numerical vector based on the importance of words within a document and across the dataset.
+
+The basic idea is:
+
+* **Term Frequency (TF):** how frequently a word occurs in a document.
+* **Inverse Document Frequency (IDF):** reduces the importance of words that occur across many documents.
+* Words that are more informative for a particular document receive higher weights.
+
+The resulting representation is a sparse numerical vector.
 
 ```text
-Logistic Regression
-SVC
+Raw Text
+   │
+   ▼
+Text Preprocessing
+   │
+   ▼
+TF-IDF Vectorizer
+   │
+   ▼
+Numerical Feature Vector
+   │
+   ▼
 Linear SVM
 ```
 
-**Linear SVM** is used as the primary classifier based on the evaluation performed during development.
+TF-IDF provides a strong traditional baseline for text classification and is computationally efficient.
 
 ---
 
-## Notes
+## 2. Sentence Transformer Embeddings
 
-* The notebook is designed to be independent of a specific notebook platform.
-* Internet access is required for installing dependencies and cloning the repository.
-* The Sentence Transformer model may be downloaded automatically on first use.
-* A Gemini API key is required only for the support-agent response-generation stage.
-* Keep API credentials outside the source code.
+The second approach uses a pretrained Sentence Transformer:
+
+```text
+sentence-transformers/all-MiniLM-L6-v2
+```
+
+Instead of representing text mainly through individual word importance, the Sentence Transformer generates a **dense semantic embedding** for the complete input sentence.
+
+```text
+Raw Text
+   │
+   ▼
+Text Preprocessing
+   │
+   ▼
+all-MiniLM-L6-v2
+   │
+   ▼
+Dense Sentence Embedding
+   │
+   ▼
+Linear SVM
+```
+
+This allows semantically similar sentences to have similar vector representations even when they do not contain exactly the same words.
+
+---
+
+# 🤖 Classifier Experiments
+
+Several classifiers were experimented with during development:
+
+* Logistic Regression
+* Support Vector Classifier (SVC)
+* Linear Support Vector Machine (Linear SVM)
+
+The experiments showed that **Linear SVM provided the most promising classification performance** for the implemented feature representations.
+
+Therefore, Linear SVM is used as the primary classifier in the final pipeline.
+
+```text
+Feature Extraction
+       │
+       ▼
+Numerical Vectors
+       │
+       ▼
+   Linear SVM
+       │
+       ▼
+ Predicted Intent
+```
+
+---
+
+# 🔬 Model Comparison
+
+The project compares the following approaches:
+
+| Feature Extraction   | Classifier |
+| -------------------- | ---------- |
+| TF-IDF               | Linear SVM |
+| Sentence Transformer | Linear SVM |
+
+Additional classifier experiments were also performed using:
+
+| Classifier          | Purpose                  |
+| ------------------- | ------------------------ |
+| Logistic Regression | Baseline / comparison    |
+| SVC                 | Classifier comparison    |
+| Linear SVM          | Primary/final classifier |
+
+The final model selection is based on evaluation metrics such as:
+
+* Accuracy
+* Precision
+* Recall
+* Macro F1-score
+
+Macro F1 is particularly useful for evaluating performance across multiple intents because it gives equal importance to each class.
+
+---
+
+# 📊 Evaluation
+
+The classifier is evaluated using:
+
+```text
+Accuracy
+Precision
+Recall
+F1-score
+Macro F1-score
+```
+
+A classification report is generated to evaluate performance for individual intents as well as the overall model.
+
+Example:
+
+```python
+from sklearn.metrics import classification_report, accuracy_score, f1_score
+
+print("Accuracy:", accuracy_score(y_test, y_pred))
+print("Macro F1:", f1_score(y_test, y_pred, average="macro"))
+
+print(classification_report(y_test, y_pred))
+```
+
+---
+
+# 🎯 Intent Classification
+
+The classifier maps incoming customer-support messages to predefined intents.
+
+Example intents include:
+
+```text
+account_access
+billing_payment
+complaint
+refund
+order_delivery
+product_issue
+```
+
+The complete set of intents is determined by the training dataset and project implementation.
+
+Example:
+
+```text
+Input:
+"I cannot log into my Apple account"
+
+Output:
+account_access
+```
+
+---
+
+
+# 📌 Key Contributions
+
+* Implemented **two different text feature-extraction approaches**.
+* Compared traditional **TF-IDF** representations with **Sentence Transformer semantic embeddings**.
+* Experimented with **Logistic Regression, SVC, and Linear SVM**.
+* Selected **Linear SVM** as the primary classifier based on promising observed performance.
+* Evaluated the classifier using multiple classification metrics.
+* Integrated the intent classifier into a **support-agent pipeline**.
+* Implemented **FAISS-based support knowledge retrieval**.
+* Integrated **Gemini** for support-response generation.
+* Designed structured output containing intent, action, response, decision, and reason.
+* Designed the notebook to work across common notebook environments rather than depending on a specific platform.
+
+---
+
+# ⚠️ Security
+
+Never expose API keys in source code or commit them to GitHub.
+
+Use:
+
+```text
+GEMINI_API_KEY
+```
+
+as an environment variable.
+
+---
+
+# 🔮 Future Improvements
+
+Possible future improvements include:
+
+* Increasing the size and diversity of the training dataset
+* Improving performance on minority intents
+* Hyperparameter tuning for Linear SVM
+* Comparing additional embedding models
+* Adding classifier confidence scores
+* Improving retrieval quality
+* Expanding the support knowledge base
+* Adding conversational context
+* Building an API or web interface
+* Deploying the support agent as a production service
