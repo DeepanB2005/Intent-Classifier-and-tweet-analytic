@@ -54,6 +54,10 @@ The implementation uses the following major libraries:
 * `joblib`
 * `pydantic`
 * `google-genai`
+* 
+```bash
+!pip install -q pandas numpy faiss-cpu sentence-transformers scikit-learn joblib pydantic google-genai
+```
 
 These dependencies support embedding generation, similarity search, machine-learning components, structured outputs, and LLM-based response generation.
 
