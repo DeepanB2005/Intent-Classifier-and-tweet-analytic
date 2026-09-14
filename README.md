@@ -173,6 +173,7 @@ After setting the project path:
 from support_agent.main import support_agent
 
 Then inference remains simple:
+#single text input
 
 message = "I cannot log into my Apple account"
 
@@ -182,6 +183,7 @@ print(result)
 ```
 ## 5. Environment-independent test section
    ```python
+#multi text input
        test_messages = [
     "I cannot log into my Apple account",
     "I was charged twice for the same purchase",
@@ -201,7 +203,7 @@ for message in test_messages:
     print("DECISION:", result.get("decision"))
     print("REASON:", result.get("reason"))
     print("RESPONSE:", result.get("response"))
-       ```
+   ```
 The API key should **not be hard-coded or committed to the repository**.
 
 ---
