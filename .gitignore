@@ -1,0 +1,19 @@
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Secrets
+.env
+*.key
+
+# Large intermediate embedding files
+*.npy
+
+# Intermediate RAG datasets
+apple_rag_pairs.csv
+apple_rag_with_intents.csv
+
+# Outputs
+outputs/
+logs/
