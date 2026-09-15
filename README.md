@@ -178,7 +178,6 @@ print("Support agent loaded successfully.")
 #8 use the agent for output
 #single input
 ```python
-from pprint import pprint
 
 message = "I cannot log into my Apple account"
 
