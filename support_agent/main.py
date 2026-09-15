@@ -84,12 +84,14 @@ def support_agent(customer_message):
     customer_message.strip()
 )
 
+    rag_results = retrieved["results"]
+
     return {
         "customer_message": customer_message.strip(),
     
-        "Classifiers output_intent": result.intent,
+        "classifier_output_intent": result.intent,
     
-        "retrieved_examples_using RAG": retrieved[
+        "retrieved_examples_using_RAG": rag_results[
             [
                 "customer_message",
                 "apple_response",
