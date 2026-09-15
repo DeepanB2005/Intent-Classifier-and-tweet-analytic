@@ -84,27 +84,27 @@ def support_agent(customer_message):
     customer_message.strip()
 )
 
-return {
-    "customer_message": customer_message.strip(),
-
-    "Classifiers output_intent": result.intent,
-
-    "retrieved_examples_using RAG": retrieved[
-        [
-            "customer_message",
-            "apple_response",
-            "intent",
-            "semantic_score",
-            "intent_match",
-            "rerank_score"
-        ]
-    ].to_dict(orient="records"),
-
-    "action": result.action,
-    "response": result.response,
-    "decision": result.decision,
-    "reason": result.reason
-}
+    return {
+        "customer_message": customer_message.strip(),
+    
+        "Classifiers output_intent": result.intent,
+    
+        "retrieved_examples_using RAG": retrieved[
+            [
+                "customer_message",
+                "apple_response",
+                "intent",
+                "semantic_score",
+                "intent_match",
+                "rerank_score"
+            ]
+        ].to_dict(orient="records"),
+    
+        "action": result.action,
+        "response": result.response,
+        "decision": result.decision,
+        "reason": result.reason
+    }
 
 
 if __name__ == "__main__":
