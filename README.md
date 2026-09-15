@@ -184,7 +184,42 @@ message = "I cannot log into my Apple account"
 
 result = support_agent(message)
 
-pprint(result)
+print("=" * 80)
+print("CUSTOMER MESSAGE")
+print("=" * 80)
+print(result["customer_message"])
+
+print("\n" + "=" * 80)
+print("CLASSIFIER OUTPUT")
+print("=" * 80)
+print("Intent:", result["classifier_output_intent"])
+
+
+print("\n" + "=" * 80)
+print("SUPPORT AGENT OUTPUT")
+print("=" * 80)
+print("Action:", result["action"])
+print("Response:", result["response"])
+print("Decision:", result["decision"])
+print("Reason:", result["reason"])
+
+print("\n" + "=" * 80)
+print("RAG RETRIEVED HISTORICAL EXAMPLES")
+print("=" * 80)
+
+for i, example in enumerate(
+    result["retrieved_examples_using_RAG"], 1
+):
+    print(f"\n--- Retrieved Example {i} ---")
+    print("Customer:", example["customer_message"])
+    print("Apple Response:", example["apple_response"])
+    print("Historical Intent:", example["intent"])
+    print("Semantic Similarity:", 
+          round(example["semantic_score"], 3))
+    print("Intent Match:", example["intent_match"])
+    print("Rerank Score:", 
+          round(example["rerank_score"], 3))
+
 ```
 
 # multiple input texts
