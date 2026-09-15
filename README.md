@@ -106,29 +106,22 @@ print(prediction)
 # 💻 Running the Notebook
 
 The notebook is designed to be **environment-independent**.
-
-## 1. Install Dependencies
-
-Run the following cell:
-
+# ============================================================
+## 1. Install dependencies
+# ============================================================
 ```python
 %pip install -q pandas numpy scikit-learn sentence-transformers faiss-cpu joblib pydantic google-genai
 ```
 
-Using `%pip` makes the installation suitable for notebook environments.
-
----
-
-## 2. Clone the Repository
-
-If the repository is not already available:
-
+# ============================================================
+## 2. Clone repository
+# ============================================================
 ```python
 import subprocess
 from pathlib import Path
 
 REPO_URL = "https://github.com/DeepanB2005/Intent-Classifier-and-tweet-analytic.git"
-REPO_DIR = Path.cwd() / "Intent-Classifier-and-tweet-analytic"
+REPO_DIR = Path("/content/Intent-Classifier-and-tweet-analytic")
 
 if not REPO_DIR.exists():
     subprocess.run(
@@ -137,22 +130,42 @@ if not REPO_DIR.exists():
     )
 
 print("Repository:", REPO_DIR)
+
+```
+# ============================================================
+# 3. Download Git LFS files
+# ============================================================
+```python
+!apt-get -qq update
+!apt-get -qq install git-lfs
+!git lfs install
+
+%cd /content/Intent-Classifier-and-tweet-analytic
+!git lfs pull
 ```
 
-The notebook does not assume a fixed directory such as:
+# ============================================================
+# 4. Verify FAISS index
+# ============================================================
+```python
+index_file = REPO_DIR / "support_agent" / "artifacts" / "apple_rag.index"
 
-```text
-/kaggle/working/
+print(f"FAISS index size: {index_file.stat().st_size:,} bytes")
 ```
 
----
+# ============================================================
+# 5. Add repository to Python path
+# ============================================================
+```python
+import sys
 
-## 3. Configure the Gemini API
+if str(REPO_DIR) not in sys.path:
+    sys.path.insert(0, str(REPO_DIR))
 
-For the support-agent component, provide your Gemini API key through the `GEMINI_API_KEY` environment variable.
-
-For interactive notebook use:
-
+```
+# ============================================================
+# 6. Gemini API key
+# ============================================================
 ```python
 import os
 from getpass import getpass
@@ -162,19 +175,22 @@ if not os.environ.get("GEMINI_API_KEY"):
         "Enter your Gemini API key: "
     )
 
-if not os.environ.get("GEMINI_API_KEY"):
+if not os.environ["GEMINI_API_KEY"]:
     raise ValueError("GEMINI_API_KEY was not provided.")
+
 ```
+# ============================================================
+# 7. Load Support Agent
+# ============================================================
 
-## 4. Import the support agent
-
-After setting the project path:
 ```python
 from support_agent.main import support_agent
-```
 
-Then inference remains simple:
-#single text input
+print("Support agent loaded successfully.")
+
+```
+#8 use the agent for output
+#single input
 ```python
 message = "I cannot log into my Apple account"
 
@@ -182,33 +198,29 @@ result = support_agent(message)
 
 print(result)
 ```
-## 5. Environment-independent test section
-#multi text input
-   ```python
-       test_messages = [
-    "I cannot log into my Apple account",
-    "I was charged twice for the same purchase",
-    "I want a refund for my purchase",
-    "Where is my order?",
-    "My iPhone screen is not working"
+
+# multiple input texts
+```python
+test_messages = [
+ "I cannot log into my Apple account",
+ "I was charged twice for the same purchase",
+ "I want a refund for my purchase",
+ "Where is my order?",
+ "My iPhone screen is not working"
 ]
 
 for message in test_messages:
-    print("=" * 70)
-    print("CUSTOMER:", message)
-
-    result = support_agent(message)
-
-    print("INTENT:", result.get("intent"))
-    print("ACTION:", result.get("action"))
-    print("DECISION:", result.get("decision"))
-    print("REASON:", result.get("reason"))
-    print("RESPONSE:", result.get("response"))
-   ```
-The API key should **not be hard-coded or committed to the repository**.
-
----
-
+        print("=" * 70)
+        print("CUSTOMER:", message)
+       
+        result = support_agent(message)
+       
+        print("INTENT:", result.get("intent"))
+        print("ACTION:", result.get("action"))
+        print("DECISION:", result.get("decision"))
+        print("REASON:", result.get("reason"))
+        print("RESPONSE:", result.get("response"))
+```
 # 📁 Project Structure
 
 ```text
