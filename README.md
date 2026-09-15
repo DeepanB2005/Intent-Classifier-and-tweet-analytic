@@ -178,11 +178,13 @@ print("Support agent loaded successfully.")
 #8 use the agent for output
 #single input
 ```python
+from pprint import pprint
+
 message = "I cannot log into my Apple account"
 
 result = support_agent(message)
 
-print(result)
+pprint(result)
 ```
 
 # multiple input texts
