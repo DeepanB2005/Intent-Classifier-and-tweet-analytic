@@ -106,16 +106,12 @@ print(prediction)
 # 💻 Running the Notebook
 
 The notebook is designed to be **environment-independent**.
-# ============================================================
 ## 1. Install dependencies
-# ============================================================
 ```python
 %pip install -q pandas numpy scikit-learn sentence-transformers faiss-cpu joblib pydantic google-genai
 ```
 
-# ============================================================
 ## 2. Clone repository
-# ============================================================
 ```python
 import subprocess
 from pathlib import Path
@@ -132,9 +128,7 @@ if not REPO_DIR.exists():
 print("Repository:", REPO_DIR)
 
 ```
-# ============================================================
 # 3. Download Git LFS files
-# ============================================================
 ```python
 !apt-get -qq update
 !apt-get -qq install git-lfs
@@ -144,18 +138,14 @@ print("Repository:", REPO_DIR)
 !git lfs pull
 ```
 
-# ============================================================
 # 4. Verify FAISS index
-# ============================================================
 ```python
 index_file = REPO_DIR / "support_agent" / "artifacts" / "apple_rag.index"
 
 print(f"FAISS index size: {index_file.stat().st_size:,} bytes")
 ```
 
-# ============================================================
 # 5. Add repository to Python path
-# ============================================================
 ```python
 import sys
 
@@ -163,9 +153,7 @@ if str(REPO_DIR) not in sys.path:
     sys.path.insert(0, str(REPO_DIR))
 
 ```
-# ============================================================
 # 6. Gemini API key
-# ============================================================
 ```python
 import os
 from getpass import getpass
@@ -179,9 +167,7 @@ if not os.environ["GEMINI_API_KEY"]:
     raise ValueError("GEMINI_API_KEY was not provided.")
 
 ```
-# ============================================================
 # 7. Load Support Agent
-# ============================================================
 
 ```python
 from support_agent.main import support_agent
